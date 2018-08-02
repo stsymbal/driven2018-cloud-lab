@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_0rnxbig" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.16.2">
+  <bpmn:process id="Welcome" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>SequenceFlow_0cxydya</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_0cxydya" sourceRef="StartEvent_1" targetRef="Task_0bekwhc" />
+    <bpmn:endEvent id="EndEvent_0goert4">
+      <bpmn:incoming>SequenceFlow_1slyn3r</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_1slyn3r" sourceRef="Task_0bekwhc" targetRef="EndEvent_0goert4" />
+    <bpmn:userTask id="Task_0bekwhc" name="Do Welcome Party">
+      <bpmn:incoming>SequenceFlow_0cxydya</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1slyn3r</bpmn:outgoing>
+    </bpmn:userTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Welcome">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="173" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0cxydya_di" bpmnElement="SequenceFlow_0cxydya">
+        <di:waypoint x="209" y="120" />
+        <di:waypoint x="296" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_0goert4_di" bpmnElement="EndEvent_0goert4">
+        <dc:Bounds x="475" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1slyn3r_di" bpmnElement="SequenceFlow_1slyn3r">
+        <di:waypoint x="396" y="120" />
+        <di:waypoint x="475" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_05gj4ja_di" bpmnElement="Task_0bekwhc">
+        <dc:Bounds x="296" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

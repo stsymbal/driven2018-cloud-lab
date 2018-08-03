@@ -1,0 +1,6 @@
+applications:
+- name: driven-lab
+  path: target/ZeroToCloudIn30MinLab-0.0.1-SNAPSHOT.jar
+  memory: 1G
+  timeout: 180
+  random-route: true

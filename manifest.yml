@@ -1,6 +1,9 @@
 applications:
 - name: driven-lab
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
   path: target/ZeroToCloudIn30MinLab-0.0.1-SNAPSHOT.jar
   memory: 1G
   timeout: 180
   random-route: true
+  services:
+  - driven-lab-db

@@ -1,0 +1,7 @@
+applications:
+- name: driven-lab
+  docker:
+    image: bp3tsymbal/driven2018-cloud-lab
+  memory: 2G
+  timeout: 180
+  random-route: true
